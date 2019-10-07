@@ -7,7 +7,7 @@
 
 @tablet-max: 1520px; //
 @tablet-min: 1280px;
-@phone-max: 1279px;
+@mobile-max: 1279px;
 
 .randomColor() {
     @randomColor: `Math.floor(Math.random()*16777215).toString(16)`;
@@ -192,6 +192,10 @@ header {
         width: 990px;
     }
 
+    @media (max-width: @mobile-max) {
+        width: 375px;
+    }
+
     .rotate-test {
         position: absolute;
         top: 200px;
@@ -281,6 +285,13 @@ header {
             height: 415px;
         }
 
+        @media (max-width: @mobile-max) {
+            width: 295px;
+            height: 150px;
+            top: 10px;
+            left: 0;
+        }
+
         h1 {
             text-align: left;
             font: 700 46px/64px Bahnschrift;
@@ -309,7 +320,7 @@ header {
         height: 488px;
         background: transparent url('../images/shape-2.png') 0% 0% no-repeat padding-box;
         opacity: 1;
-        -webkit-clip-path: polygon(0 0, 70.5% 100%, 100% 13%);
+        -webkit-clip-path: polygon(0 0, 70% 100%, 100% 13%);
         clip-path: polygon(0 0, 70% 100%, 100% 13%);
 
         @media (min-width: @tablet-min) and (max-width: @tablet-max) {
@@ -319,6 +330,13 @@ header {
             height: 425px;
             -webkit-clip-path: polygon(0 0, 91% 100%, 100% 11%);
             clip-path: polygon(0 0, 91% 100%, 100% 11%);
+        }
+
+        @media (max-width: @mobile-max) {
+            width: 333px;
+            height: 154px;
+            -webkit-clip-path: polygon(0 0, 92% 100%, 100% 13%);
+            clip-path: polygon(0 0, 92% 100%, 100% 13%);
         }
 
         h1 {
@@ -396,6 +414,13 @@ header {
             height: 361px;
         }
 
+        @media (max-width: @mobile-max) {
+            width: 295px;
+            height: 131px;
+            top: 155px;
+            left: 0px;
+        }
+
         h1 {
             text-align: left;
             font: 700 41px/43px Bahnschrift;
@@ -424,6 +449,13 @@ header {
             height: 433px;
         }
 
+        @media (max-width: @mobile-max) {
+            width: 230px;
+            height: 157px;
+            top: 163px;
+            left: 0;
+        }
+
 
         h1 {
             text-align: left;
@@ -441,7 +473,7 @@ header {
         left: calc(848px - @width-minus);
         width: 380px;
         height: 707px;
-        background: transparent url('../images/IMG_20190614_202307.png') 0% 0% no-repeat padding-box;
+        background: #e80e0e url('../images/IMG_20190614_202307.png') 0% 0% no-repeat padding-box;
         opacity: 1;
         -webkit-clip-path: polygon(100% 0, 100% 96%, 0 100%);
         clip-path: polygon(100% 0, 100% 96%, 0 100%);
@@ -452,6 +484,15 @@ header {
             left: calc(501px + 73px);
             width: 334px;
             height: 706px;
+            -webkit-clip-path: polygon(100% 12%, 100% 97%, 0 100%);
+            clip-path: polygon(100% 12%, 100% 97%, 0 100%);
+        }
+
+        @media (max-width: @mobile-max) {
+            width: 121px;
+            height: 225px;
+            top: calc(171px);
+            left: calc(183px);
         }
 
         h1 {
@@ -488,6 +529,13 @@ header {
             height: 157px;
         }
 
+        @media (max-width: @mobile-max) {
+            width: 119px;
+            height: 57px;
+            top: 310px;
+            left: 25px;
+        }
+
         .icon {
             width: 47px;
             height: 56px;
@@ -512,6 +560,13 @@ header {
             left: calc(330px + 73px);
             width: 163px;
             height: 209px;
+        }
+
+        @media (max-width: @mobile-max) {
+            width: 59px;
+            height: 76px;
+            top: 318px;
+            left: 118px;
         }
 
         .icon {
@@ -540,7 +595,12 @@ header {
             height: 246px;
         }
 
-
+        @media (max-width: @mobile-max) {
+            width: 77px;
+            height: 89px;
+            top: 299px;
+            left: 150px;
+        }
 
         .icon {
             width: 45px;
