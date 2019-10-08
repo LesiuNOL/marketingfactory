@@ -20,7 +20,7 @@ header {
   height: 552px;
   max-width: 100%;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   header {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
@@ -50,7 +50,7 @@ header ul.nav.hide {
 header ul.nav li.nav-item {
   margin: 0 35px;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   header ul.nav li.nav-item {
     margin: 0 28px;
   }
@@ -65,7 +65,7 @@ header ul.nav li.nav-item a.nav-link {
 header ul.nav li.nav-item a.nav-link:hover {
   color: #b7d400;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   header ul.nav li.nav-item a.nav-link {
     font: 300 16px/0px Bahnschrift;
   }
@@ -134,7 +134,7 @@ header .toggle-button .inner .line.three.close {
   left: 0;
   color: red;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .debug {
     color: blue;
   }
@@ -146,12 +146,12 @@ header .toggle-button .inner .line.three.close {
   position: relative;
   top: 0;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container {
     width: 990px;
   }
 }
-@media (max-width: 1039px) {
+@media (max-width: 1022px) {
   .mf-container {
     width: 375px;
   }
@@ -225,7 +225,7 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(0 0, 0 91%, 100% 100%);
   clip-path: polygon(0 0, 0 91%, 100% 100%);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-eventy {
     top: calc(-15px);
     left: 73px;
@@ -233,7 +233,7 @@ header .toggle-button .inner .line.three.close {
     height: 415px;
   }
 }
-@media (max-width: 1039px) {
+@media (max-width: 1022px) {
   .mf-container .shape-eventy {
     width: 295px;
     height: 150px;
@@ -249,7 +249,7 @@ header .toggle-button .inner .line.three.close {
   margin: 277px 0 0 215px;
   text-transform: uppercase;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-eventy h1 {
     top: 240px;
     left: 193px;
@@ -270,7 +270,7 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(0 0, 70% 100%, 100% 13%);
   clip-path: polygon(0 0, 70% 100%, 100% 13%);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-video {
     top: calc(-31px);
     left: 73px;
@@ -280,7 +280,7 @@ header .toggle-button .inner .line.three.close {
     clip-path: polygon(0 0, 91% 100%, 100% 11%);
   }
 }
-@media (max-width: 1039px) {
+@media (max-width: 1022px) {
   .mf-container .shape-video {
     width: 333px;
     height: 154px;
@@ -296,7 +296,7 @@ header .toggle-button .inner .line.three.close {
   margin: 253px 0 0 828px;
   text-transform: uppercase;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-video h1 {
     position: absolute;
     font: Bold 20px/28px Bahnschrift;
@@ -316,7 +316,7 @@ header .toggle-button .inner .line.three.close {
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
   display: flex;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-wydarzenia {
     top: calc(1580px);
     left: 533px;
@@ -336,7 +336,7 @@ header .toggle-button .inner .line.three.close {
   text-transform: uppercase;
   width: 100%;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-wydarzenia h1 {
     font: Bold 25px/35px Bahnschrift;
     letter-spacing: 1.63px;
@@ -352,7 +352,7 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(0 0, 79% 100%, 100% 11%);
   clip-path: polygon(0 0, 79% 100%, 100% 11%);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-transport {
     top: calc(372px);
     left: 73px;
@@ -360,7 +360,7 @@ header .toggle-button .inner .line.three.close {
     height: 361px;
   }
 }
-@media (max-width: 1039px) {
+@media (max-width: 1022px) {
   .mf-container .shape-transport {
     width: 295px;
     height: 131px;
@@ -386,7 +386,7 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(0 0, 11% 100%, 100% 83%);
   clip-path: polygon(0 0, 11% 100%, 100% 83%);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-pr {
     top: calc(386px);
     left: 73px;
@@ -394,7 +394,7 @@ header .toggle-button .inner .line.three.close {
     height: 433px;
   }
 }
-@media (max-width: 1039px) {
+@media (max-width: 1022px) {
   .mf-container .shape-pr {
     width: 230px;
     height: 157px;
@@ -421,7 +421,7 @@ header .toggle-button .inner .line.three.close {
   clip-path: polygon(100% 0, 100% 96%, 0 100%);
   display: flex;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-marketing {
     top: calc(326px);
     left: calc(574px);
@@ -431,7 +431,7 @@ header .toggle-button .inner .line.three.close {
     clip-path: polygon(100% 12%, 100% 97%, 0 100%);
   }
 }
-@media (max-width: 1039px) {
+@media (max-width: 1022px) {
   .mf-container .shape-marketing {
     width: 121px;
     height: 225px;
@@ -447,7 +447,7 @@ header .toggle-button .inner .line.three.close {
   margin: 0 0 63px 100px;
   text-transform: uppercase;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-marketing h1 {
     font: Bold 38px/54px Bahnschrift;
     letter-spacing: 2.47px;
@@ -464,7 +464,7 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(100% 0, 77% 100%, 0 30%);
   clip-path: polygon(100% 0, 77% 100%, 0 30%);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-yt {
     top: calc(787px);
     left: calc(148px);
@@ -472,7 +472,7 @@ header .toggle-button .inner .line.three.close {
     height: 157px;
   }
 }
-@media (max-width: 1039px) {
+@media (max-width: 1022px) {
   .mf-container .shape-yt {
     width: 119px;
     height: 57px;
@@ -496,7 +496,7 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(49% 1%, 100% 100%, 9% 67%);
   clip-path: polygon(49% 1%, 100% 100%, 8% 68%);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-in {
     top: calc(807px);
     left: calc(403px);
@@ -504,7 +504,7 @@ header .toggle-button .inner .line.three.close {
     height: 209px;
   }
 }
-@media (max-width: 1039px) {
+@media (max-width: 1022px) {
   .mf-container .shape-in {
     width: 59px;
     height: 76px;
@@ -528,7 +528,7 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(100% 1%, 41% 100%, 0 12%);
   clip-path: polygon(100% 1%, 41% 100%, 0 12%);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-instagram {
     top: calc(757px);
     left: calc(489px);
@@ -536,7 +536,7 @@ header .toggle-button .inner .line.three.close {
     height: 246px;
   }
 }
-@media (max-width: 1039px) {
+@media (max-width: 1022px) {
   .mf-container .shape-instagram {
     width: 77px;
     height: 89px;
@@ -559,7 +559,7 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(0 100%, 14% 0, 100% 84%);
   clip-path: polygon(0 100%, 14% 0, 100% 84%);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-fb {
     top: calc(851px);
     left: calc(73px);
@@ -648,7 +648,7 @@ header .toggle-button .inner .line.three.close {
   top: calc(511px);
   left: calc(966px);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .events .event.event-1 {
     top: calc(1855px);
     left: calc(509px);
@@ -658,7 +658,7 @@ header .toggle-button .inner .line.three.close {
   top: calc(648px);
   left: calc(966px);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .events .event.event-2 {
     top: calc(1992px);
     left: calc(509px);
@@ -668,7 +668,7 @@ header .toggle-button .inner .line.three.close {
   top: calc(785px);
   left: calc(966px);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .events .event.event-3 {
     top: calc(2129px);
     left: calc(509px);
@@ -678,7 +678,7 @@ header .toggle-button .inner .line.three.close {
   top: calc(922px);
   left: calc(966px);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .events .event.event-4 {
     top: calc(2266px);
     left: calc(509px);
@@ -694,7 +694,7 @@ header .toggle-button .inner .line.three.close {
   clip-path: polygon(45% 100%, 100% 34%, 0 0);
   position: absolute;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .events .more-1 {
     top: calc(2418px);
     left: calc(508px);
@@ -711,7 +711,7 @@ header .toggle-button .inner .line.three.close {
   position: absolute;
   display: flex;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .events .more-2 {
     top: calc(2418px);
     left: calc(508px);
@@ -741,7 +741,7 @@ header .toggle-button .inner .line.three.close {
 .mf-container .newest-post img.newest-photo:hover {
   opacity: 0.9;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .newest-post img.newest-photo {
     top: calc(1034px);
     left: calc(73px);
@@ -763,7 +763,7 @@ header .toggle-button .inner .line.three.close {
   text-transform: uppercase;
   transition: all 0.5s linear;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .newest-post .post-info {
     top: calc(1187px);
     left: calc(73px);
@@ -775,7 +775,7 @@ header .toggle-button .inner .line.three.close {
   align-self: flex-end;
   margin: 0 0 20px 121px;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .newest-post .post-info .content {
     margin: 0 0 12px 110px;
   }
@@ -787,7 +787,7 @@ header .toggle-button .inner .line.three.close {
   text-align: left;
   display: block;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .newest-post .post-info .content p.post-title {
     font: 500 20px/18px Bahnschrift;
   }
@@ -815,7 +815,7 @@ header .toggle-button .inner .line.three.close {
   color: #162633;
   padding: 105px 16px 77px 77px;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .newest-post .post-content {
     top: calc(1279px);
     left: calc(105px);
@@ -824,7 +824,7 @@ header .toggle-button .inner .line.three.close {
     padding: 92px 16px 77px 77px;
   }
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .newest-post .post-content p {
     overflow: hidden;
     max-height: 177px;
@@ -857,7 +857,7 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(23% 7%, 0% 100%, 100% 0);
   clip-path: polygon(23% 7%, 0% 100%, 100% 0);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-latests-post {
     top: calc(1754px);
     left: -14px;
@@ -886,7 +886,7 @@ header .toggle-button .inner .line.three.close {
   background: #fff;
   padding: 34px 16px;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-latests-post-bg {
     top: calc(1837px);
     left: 92px;
@@ -950,7 +950,7 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(0 0, 11% 91%, 100% 100%);
   clip-path: polygon(0 0, 11% 91%, 100% 100%);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .home-bottom-triangle {
     top: calc(1280px);
     left: 0px;
@@ -965,7 +965,7 @@ header .toggle-button .inner .line.three.close {
   top: calc(1664px);
   height: 352px;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container footer {
     top: calc(2090px);
     height: 368px;
@@ -981,7 +981,7 @@ header .toggle-button .inner .line.three.close {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container footer .logo {
     width: 179px;
     height: 179px;
@@ -997,7 +997,7 @@ header .toggle-button .inner .line.three.close {
   clip-path: polygon(0 0, 3% 100%, 55% 100%);
   position: absolute;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container footer .triangle {
     top: calc(90px);
     left: 346px;
@@ -1017,7 +1017,7 @@ header .toggle-button .inner .line.three.close {
   transform: translateY(-50%);
   position: absolute;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container footer .contact {
     width: 354px;
     height: 152px;
@@ -1031,7 +1031,7 @@ header .toggle-button .inner .line.three.close {
   letter-spacing: 1.89px;
   color: #111D27;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container footer .contact h1 {
     font: 600 18px/8px Bahnschrift;
     letter-spacing: 1.24px;
@@ -1044,7 +1044,7 @@ header .toggle-button .inner .line.three.close {
   color: #111D27;
   margin: 12px 0px;
 }
-@media (min-width: 1040px) and (max-width: 1520px) {
+@media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container footer .contact p {
     font: 500 19px/27px Bahnschrift;
     letter-spacing: 1.24px;
