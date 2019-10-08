@@ -196,15 +196,6 @@ header {
         width: 375px;
     }
 
-    .rotate-test {
-        position: absolute;
-        top: 200px;
-        left: 0;
-        width: 50px;
-        height: 50px;
-        background: red;
-    }
-
     .mf-rotate-text {
         top: 613px;
         left: -150px;
@@ -216,6 +207,10 @@ header {
         opacity: 0.7;
         position: absolute;
         z-index: 1;
+        
+        @media (max-width: @mobile-max) {
+            opacity: 0;  
+        }
 
         span {
             margin: 0 43px;
@@ -289,7 +284,8 @@ header {
             width: 295px;
             height: 150px;
             top: 10px;
-            left: 0;
+            left: unset;
+            right: 38px;
         }
 
         h1 {
@@ -337,6 +333,8 @@ header {
             height: 154px;
             -webkit-clip-path: polygon(0 0, 92% 100%, 100% 13%);
             clip-path: polygon(0 0, 92% 100%, 100% 13%);
+            left: unset;
+            right: 0;
         }
 
         h1 {

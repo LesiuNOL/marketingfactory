@@ -156,14 +156,6 @@ header .toggle-button .inner .line.three.close {
     width: 375px;
   }
 }
-.mf-container .rotate-test {
-  position: absolute;
-  top: 200px;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  background: red;
-}
 .mf-container .mf-rotate-text {
   top: 613px;
   left: -150px;
@@ -175,6 +167,11 @@ header .toggle-button .inner .line.three.close {
   opacity: 0.7;
   position: absolute;
   z-index: 1;
+}
+@media (max-width: 1022px) {
+  .mf-container .mf-rotate-text {
+    opacity: 0;
+  }
 }
 .mf-container .mf-rotate-text span {
   margin: 0 43px;
@@ -238,7 +235,8 @@ header .toggle-button .inner .line.three.close {
     width: 295px;
     height: 150px;
     top: 10px;
-    left: 0;
+    left: unset;
+    right: 38px;
   }
 }
 .mf-container .shape-eventy h1 {
@@ -286,6 +284,8 @@ header .toggle-button .inner .line.three.close {
     height: 154px;
     -webkit-clip-path: polygon(0 0, 92% 100%, 100% 13%);
     clip-path: polygon(0 0, 92% 100%, 100% 13%);
+    left: unset;
+    right: 0;
   }
 }
 .mf-container .shape-video h1 {
