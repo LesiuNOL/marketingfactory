@@ -188,6 +188,9 @@ header {
     position: relative;
     top: 0;
 
+    height: 1000px;
+    background: #00000050;
+
     @media (min-width: @tablet-min) and (max-width: @tablet-max) {
         width: 990px;
     }
@@ -207,9 +210,9 @@ header {
         opacity: 0.7;
         position: absolute;
         z-index: 1;
-        
+
         @media (max-width: @mobile-max) {
-            opacity: 0;  
+            opacity: 0;
         }
 
         span {
@@ -283,7 +286,7 @@ header {
         @media (max-width: @mobile-max) {
             width: 295px;
             height: 150px;
-            top: 10px;
+            top: 6px;
             left: unset;
             right: 38px;
         }
@@ -377,6 +380,10 @@ header {
             clip-path: polygon(100% 0, 0 100%, 100% 100%);
         }
 
+        @media (max-width: @mobile-max) {
+            display: none;
+        }
+
 
         h1 {
             text-align: right;
@@ -415,8 +422,8 @@ header {
         @media (max-width: @mobile-max) {
             width: 295px;
             height: 131px;
-            top: 155px;
-            left: 0px;
+            top: 147px;
+            left: 42px;
         }
 
         h1 {
@@ -450,8 +457,8 @@ header {
         @media (max-width: @mobile-max) {
             width: 230px;
             height: 157px;
-            top: 163px;
-            left: 0;
+            top: 152px;
+            left: 40px;
         }
 
 
@@ -489,8 +496,8 @@ header {
         @media (max-width: @mobile-max) {
             width: 121px;
             height: 225px;
-            top: calc(171px);
-            left: calc(183px);
+            top: calc(161px);
+            left: calc(225px);
         }
 
         h1 {
@@ -530,8 +537,8 @@ header {
         @media (max-width: @mobile-max) {
             width: 119px;
             height: 57px;
-            top: 310px;
-            left: 25px;
+            top: 298px;
+            left: 65px;
         }
 
         .icon {
@@ -563,8 +570,8 @@ header {
         @media (max-width: @mobile-max) {
             width: 59px;
             height: 76px;
-            top: 318px;
-            left: 118px;
+            top: 305px;
+            left: 158px;
         }
 
         .icon {
@@ -596,8 +603,8 @@ header {
         @media (max-width: @mobile-max) {
             width: 77px;
             height: 89px;
-            top: 299px;
-            left: 150px;
+            top: 287px;
+            left: 190px;
         }
 
         .icon {
@@ -625,7 +632,12 @@ header {
             height: 217px;
         }
 
-
+        @media (max-width: @mobile-max) {
+            width: 177px;
+            height: 79px;
+            top: calc(320px);
+            left: calc(40px);
+        }
 
         .icon {
             width: 40px;
@@ -644,6 +656,10 @@ header {
             width: 399px;
             height: 122px;
             position: absolute;
+
+            @media (max-width: @mobile-max) {
+                display: none;
+            }
 
 
             img {
@@ -770,6 +786,10 @@ header {
                 top: calc(2647px - @top-minus + 73px + @tablet-top);
                 left: calc(659px - @width-minus + 127px);
             }
+
+            @media (max-width: @mobile-max) {
+                display: none;
+            }
         }
 
         .more-2 {
@@ -786,6 +806,10 @@ header {
             @media (min-width: @tablet-min) and (max-width: @tablet-max) {
                 top: calc(2647px - @top-minus + 73px + @tablet-top);
                 left: calc(659px - @width-minus + 127px);
+            }
+
+            @media (max-width: @mobile-max) {
+                display: none;
             }
 
             span {
@@ -823,6 +847,13 @@ header {
                 width: 834px;
                 height: 303px;
             }
+
+            @media (max-width: @mobile-max) {
+                width: 302px;
+                height: 110px;
+                top: calc(388px);
+                left: calc(42px);
+            }
         }
 
         .post-info {
@@ -846,6 +877,14 @@ header {
                 height: 173px;
             }
 
+            @media (max-width: @mobile-max) {
+                width: 260px;
+                height: 71px;
+                top: calc(445px);
+                left: calc(42px);
+                clip-path: polygon(100% 74%, 0 0, 13% 100%);
+                -webkit-clip-path: polygon(100% 74%, 0 0, 13% 100%);
+            }
 
             .content {
                 align-self: flex-end;
@@ -903,10 +942,32 @@ header {
                 padding: 92px 16px 77px 77px;
             }
 
+            @media (max-width: @mobile-max) {
+                width: 260px;
+                height: 250px;
+                top: calc(478px);
+                left: calc(52px);
+                clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 89%);
+                -webkit-clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 89%);
+            }
+
             p {
                 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
                     overflow: hidden;
                     max-height: 177px;
+                }
+
+                @media (max-width: @mobile-max) {
+                    font: 300 12px/16px 'Crimson Text';
+                    letter-spacing: 0.14px;
+
+                    width: 219px;
+                    position: absolute;
+                    left: 31px;
+                    top: 48px;
+
+                    overflow: hidden;
+                    max-height: 124px;
                 }
             }
 
@@ -928,6 +989,14 @@ header {
                 -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 73%);
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 73%);
 
+                @media (max-width: @mobile-max) {
+                    width: 146px;
+                    height: 46px;
+                    padding: 12px 0px 22px 26px;
+                    bottom: 20px;
+                    right: 46px;
+                }
+
             }
         }
     }
@@ -947,6 +1016,15 @@ header {
             left: -14px;
             width: 521px;
             height: 357px;
+        }
+
+        @media (max-width: @mobile-max) {
+            width: 292px;
+            height: 231px;
+            top: calc(786px);
+            left: calc(-44px);
+            clip-path: polygon(23% 8%, 0% 100%, 100% 0);
+            -webkit-clip-path: polygon(23% 8%, 0% 100%, 100% 0);
         }
 
 
@@ -980,6 +1058,12 @@ header {
             height: 685px;
         }
 
+        @media (max-width: @mobile-max) {
+            width: 351px;
+            height: 685px;
+            top: 815px;
+            left: 25px;
+        }
 
         .post {
             width: 399px;
@@ -987,12 +1071,29 @@ header {
             display: block;
             margin: 20px 0 0 0;
 
+            @media (max-width: @mobile-max) {
+
+                &:nth-child(3),
+                &:nth-child(4) {
+                    display: none;
+                }
+
+                height: 218px;
+            }
+
             img {
                 width: 31%;
                 max-width: 122px;
                 height: 122px;
                 vertical-align: top;
                 display: inline-block;
+
+                @media (max-width: @mobile-max) {
+                    display: block;
+                    width: 302px;
+                    height: 94px;
+                    max-width: 302px;
+                }
             }
 
             .content {
@@ -1000,6 +1101,10 @@ header {
                 width: 68%;
                 height: 122px;
                 position: relative;
+
+                @media (max-width: @mobile-max) {
+                    height: 145px;
+                }
 
                 h2 {
                     text-align: left;
@@ -1014,12 +1119,16 @@ header {
 
                 p {
                     text-align: left;
-                    font: Regular 18px/18px Crimson Text;
+                    font: 400 18px/18px Crimson Text;
                     letter-spacing: 0.22px;
                     color: #162633;
                     display: inline-block;
                     bottom: 0;
                     margin: 0 0 4px 16px;
+
+                    @media (max-width: @mobile-max) {
+                        margin-bottom: 10px;
+                    }
                 }
 
                 a.more {
@@ -1029,6 +1138,12 @@ header {
                     color: #162633;
                     text-transform: uppercase;
                     margin: 0 0 12px 16px;
+
+                    @media (max-width: @mobile-max) {
+                        font: 600 16px/12px Bahnschrift;
+                        letter-spacing: 0;
+                        margin: 0px 0 0 98px;
+                    }
                 }
 
             }
@@ -1054,6 +1169,15 @@ header {
             clip-path: polygon(0 0, 16% 100%, 100% 90%);
         }
 
+        @media (max-width: @mobile-max) {
+            width: 380px;
+            height: 180px;
+            top: calc(577px);
+            left: calc(0px);
+            clip-path: polygon(0 0%, 19% 100%, 100% 87%);
+            -webkit-clip-path: polygon(0 0%, 19% 100%, 100% 87%);
+        }
+
     }
 
     footer {
@@ -1066,6 +1190,10 @@ header {
             top: calc(1860px + @tablet-top);
             //margin: 0 -95px;
             height: 368px;
+        }
+
+        @media (max-width: @mobile-max) {
+            display: none;
         }
 
         .logo {
