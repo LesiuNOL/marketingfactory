@@ -48,7 +48,7 @@
 
     <div class="row">
         <div class="mf-container">
-            <div class="mf-rotate-text"><span>/</span>MARKETING FACTORY<span>/</span></div>
+            <div class="mf-rotate-text"></div>
 
             <img src="images/shape-1@2x.png" alt="shape-1" class="col-sm-8 shadow" />
             <div class="shape shape-eventy">
@@ -241,21 +241,25 @@
         });
 
         function MFleftOnScroll() {
-            var scroll = $(window).scrollTop();
-            var height = $(document).height();
+            var scroll          = $(window).scrollTop();
+            var heightDocument  = $(document).height();
+            var heightWindow    = $(window).height();
             //console.log(scroll);
-            if (scroll < (height - 1300)) {
-                $('.mf-rotate-text').css('top', scroll + 'px');
-                if (scroll < 200) {
+            if (scroll < (heightDocument)) {
+                //$('.mf-rotate-text').css('top', scroll - (heightWindow / 2) + (350 / 2) +'px');
+                $('.mf-rotate-text').css('top', scroll - 530 + 'px');
+                if (scroll < 460) {
                     $('.mf-rotate-text').hide();
                 } else {
                     $('.mf-rotate-text').show();
                 }
             }
+            $('.height-test').css('top', scroll + (heightWindow / 2) - ($('.height-test').height() / 2) + 'px');
         }
         MFleftOnScroll();
 
         $(document).on('scroll', MFleftOnScroll);
+        $(document).on('resize', MFleftOnScroll);
 
     </script>
 </body>

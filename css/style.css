@@ -145,6 +145,49 @@ header .toggle-button .inner .line.three.close {
   margin: 0 auto;
   position: relative;
   top: 0;
+  /*.mf-rotate-text {
+        top: 613px;
+        left: 0;
+        height: 350px;
+        transform: matrix(0, -1, 1, 0, 0, 0);
+        text-align: center;
+        font: 300 15px/21px Bahnschrift;
+        letter-spacing: 0.97px;
+        color: #325673;
+        opacity: 0.7;
+        position: absolute;
+        z-index: 1;
+
+        @media (max-width: @mobile-max) {
+            opacity: 0;
+        }
+
+        span {
+            margin: 0 43px;
+        }
+
+        &::before {
+            content: " ";
+            width: 60px;
+            height: 1px;
+            background: #325673;
+            position: absolute;
+            margin: 10px -40px;
+            line-height: 5px;
+            text-align: right;
+        }
+
+        &::after {
+            content: " ";
+            width: 60px;
+            height: 1px;
+            background: #325673;
+            position: absolute;
+            margin: 10px -20px;
+            line-height: 5px;
+            text-align: right;
+        }
+    }*/
 }
 @media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container {
@@ -157,44 +200,11 @@ header .toggle-button .inner .line.three.close {
   }
 }
 .mf-container .mf-rotate-text {
-  top: 613px;
-  left: -150px;
-  transform: matrix(0, -1, 1, 0, 0, 0);
-  text-align: center;
-  font: 300 15px/21px Bahnschrift;
-  letter-spacing: 0.97px;
-  color: #325673;
-  opacity: 0.7;
   position: absolute;
+  width: 16px;
+  height: 378px;
+  background: transparent url('../images/mf_left.png') 0% 0% no-repeat padding-box;
   z-index: 1;
-}
-@media (max-width: 1022px) {
-  .mf-container .mf-rotate-text {
-    opacity: 0;
-  }
-}
-.mf-container .mf-rotate-text span {
-  margin: 0 43px;
-}
-.mf-container .mf-rotate-text::before {
-  content: " ";
-  width: 60px;
-  height: 1px;
-  background: #325673;
-  position: absolute;
-  margin: 10px -40px;
-  line-height: 5px;
-  text-align: right;
-}
-.mf-container .mf-rotate-text::after {
-  content: " ";
-  width: 60px;
-  height: 1px;
-  background: #325673;
-  position: absolute;
-  margin: 10px -20px;
-  line-height: 5px;
-  text-align: right;
 }
 .mf-container img {
   width: 100%;
@@ -1191,4 +1201,12 @@ header .toggle-button .inner .line.three.close {
     font: 500 19px/27px Bahnschrift;
     letter-spacing: 1.24px;
   }
+}
+.height-test {
+  position: absolute;
+  width: 16px;
+  height: 378px;
+  background: transparent url('../images/mf_left.png') 0% 0% no-repeat padding-box;
+  top: 0;
+  left: 0;
 }

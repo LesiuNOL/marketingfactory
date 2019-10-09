@@ -197,8 +197,17 @@ header {
     }
 
     .mf-rotate-text {
+        position: absolute;
+        width: 16px;
+        height: 378px;
+        background: transparent url('../images/mf_left.png') 0% 0% no-repeat padding-box;
+        z-index: 1;
+    }
+
+    /*.mf-rotate-text {
         top: 613px;
-        left: -150px;
+        left: 0;
+        height: 350px;
         transform: matrix(0, -1, 1, 0, 0, 0);
         text-align: center;
         font: 300 15px/21px Bahnschrift;
@@ -237,7 +246,7 @@ header {
             line-height: 5px;
             text-align: right;
         }
-    }
+    }*/
 
     img {
         width: 100%;
@@ -1269,4 +1278,13 @@ header {
             }
         }
     }
+}
+
+.height-test {
+    position: absolute;
+    width: 16px;
+    height: 378px;
+    background: transparent url('../images/mf_left.png') 0% 0% no-repeat padding-box;
+    top: 0;
+    left: 0;
 }
