@@ -3,6 +3,7 @@
 @font-face {
   font-family: 'Bahnschrift';
   src: url('../fonts/bahnschrift.ttf') format('truetype');
+  font-display: auto;
 }
 body {
   margin: 0 0 100px 0;
