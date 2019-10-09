@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 header {
-  background-image: url('../images/header_bg.png');
+  background-image: url('../images/header_bg.webp');
   background-size: 100%;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
@@ -203,7 +203,7 @@ header .toggle-button .inner .line.three.close {
   position: absolute;
   width: 16px;
   height: 378px;
-  background: transparent url('../images/mf_left.png') 0% 0% no-repeat padding-box;
+  background: transparent url('../images/mf_left.webp') 0% 0% no-repeat padding-box;
   z-index: 1;
 }
 .mf-container img {
@@ -227,7 +227,7 @@ header .toggle-button .inner .line.three.close {
   left: calc(67px);
   width: 936px;
   height: 477px;
-  background: transparent url('../images/shape-1.png') 0% 0% no-repeat padding-box;
+  background: transparent url('../images/shape-1.webp') 0% 0% no-repeat padding-box;
   opacity: 1;
   -webkit-clip-path: polygon(0 0, 0 91%, 100% 100%);
   clip-path: polygon(0 0, 0 91%, 100% 100%);
@@ -273,7 +273,7 @@ header .toggle-button .inner .line.three.close {
   left: calc(60px);
   width: 1364px;
   height: 488px;
-  background: transparent url('../images/shape-2.png') 0% 0% no-repeat padding-box;
+  background: transparent url('../images/shape-2.webp') 0% 0% no-repeat padding-box;
   opacity: 1;
   -webkit-clip-path: polygon(0 0, 70% 100%, 100% 13%);
   clip-path: polygon(0 0, 70% 100%, 100% 13%);
@@ -362,7 +362,7 @@ header .toggle-button .inner .line.three.close {
   left: calc(60px);
   width: 930px;
   height: 412px;
-  background: transparent url('../images/blur.png') 0% 0% no-repeat padding-box;
+  background: transparent url('../images/blur.webp') 0% 0% no-repeat padding-box;
   opacity: 1;
   -webkit-clip-path: polygon(0 0, 79% 100%, 100% 11%);
   clip-path: polygon(0 0, 79% 100%, 100% 11%);
@@ -396,7 +396,7 @@ header .toggle-button .inner .line.three.close {
   left: calc(60px);
   width: 726px;
   height: 493px;
-  background: transparent url('../images/30709453_1625378984197500_6552744389901287424_o.png') 0% 0% no-repeat padding-box;
+  background: transparent url('../images/30709453_1625378984197500_6552744389901287424_o.webp') 0% 0% no-repeat padding-box;
   opacity: 1;
   -webkit-clip-path: polygon(0 0, 11% 100%, 100% 83%);
   clip-path: polygon(0 0, 11% 100%, 100% 83%);
@@ -430,7 +430,7 @@ header .toggle-button .inner .line.three.close {
   left: calc(630px);
   width: 380px;
   height: 707px;
-  background: #e80e0e url('../images/IMG_20190614_202307.png') 0% 0% no-repeat padding-box;
+  background: #e80e0e url('../images/IMG_20190614_202307.webp') 0% 0% no-repeat padding-box;
   opacity: 1;
   -webkit-clip-path: polygon(100% 0, 100% 96%, 0 100%);
   clip-path: polygon(100% 0, 100% 96%, 0 100%);
@@ -1126,7 +1126,7 @@ header .toggle-button .inner .line.three.close {
 .mf-container footer .logo {
   width: 269px;
   height: 269px;
-  background: transparent url('../images/mf_logo.png') 0% 0% no-repeat padding-box;
+  background: transparent url('../images/mf_logo.webp') 0% 0% no-repeat padding-box;
   background-size: 100%;
   position: absolute;
   top: 50%;
@@ -1206,7 +1206,7 @@ header .toggle-button .inner .line.three.close {
   position: absolute;
   width: 16px;
   height: 378px;
-  background: transparent url('../images/mf_left.png') 0% 0% no-repeat padding-box;
+  background: transparent url('../images/mf_left.webp') 0% 0% no-repeat padding-box;
   top: 0;
   left: 0;
 }
