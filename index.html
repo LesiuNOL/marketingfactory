@@ -242,12 +242,15 @@
 
         function MFleftOnScroll() {
             var scroll = $(window).scrollTop();
+            var height = $(document).height();
             //console.log(scroll);
-            $('.mf-rotate-text').css('top', scroll + 'px');
-            if (scroll < 200) {
-                $('.mf-rotate-text').hide();
-            } else {
-                $('.mf-rotate-text').show();
+            if (scroll < (height - 1300)) {
+                $('.mf-rotate-text').css('top', scroll + 'px');
+                if (scroll < 200) {
+                    $('.mf-rotate-text').hide();
+                } else {
+                    $('.mf-rotate-text').show();
+                }
             }
         }
         MFleftOnScroll();
