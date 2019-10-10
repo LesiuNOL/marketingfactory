@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 @font-face {
   font-family: 'Bahnschrift';
-  src: url('../fonts/bahnschrift.ttf') format('truetype');
   font-display: auto;
+  src: url('../fonts/bahnschrift.ttf') format('truetype');
 }
 body {
   margin: 0 0 100px 0;
@@ -68,7 +68,8 @@ header ul.nav li.nav-item a.nav-link:hover {
 }
 @media (min-width: 1023px) and (max-width: 1520px) {
   header ul.nav li.nav-item a.nav-link {
-    font: 300 16px/0px Bahnschrift;
+    font: 300 15px/0px Bahnschrift;
+    letter-spacing: 0;
   }
 }
 header .toggle-button {
@@ -966,9 +967,15 @@ header .toggle-button .inner .line.three.close {
   font: 700 30px/42px Bahnschrift;
   letter-spacing: 1.95px;
   color: #FFFFFF;
-  margin-top: 200px;
   margin: 48px 139px 0 132px;
   text-transform: uppercase;
+}
+@media (max-width: 1022px) {
+  .mf-container .shape-latests-post h1 {
+    font: Bold 15px/21px Bahnschrift;
+    letter-spacing: 0.97px;
+    margin: 31px 0 0 81px;
+  }
 }
 .mf-container .shape-latests-post-bg {
   top: calc(1319px);
@@ -994,7 +1001,7 @@ header .toggle-button .inner .line.three.close {
   .mf-container .shape-latests-post-bg {
     width: 351px;
     height: 685px;
-    top: 815px;
+    top: 825px;
     left: 25px;
   }
 }

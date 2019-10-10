@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Bahnschrift';
-    src: url('../fonts/bahnschrift.ttf') format('truetype');
     font-display: auto;
+    src: url('../fonts/bahnschrift.ttf') format('truetype');
 }
 
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
@@ -89,7 +89,8 @@ header {
                 text-transform: uppercase;
 
                 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
-                    font: 300 16px/0px Bahnschrift;
+                    font: 300 15px/0px Bahnschrift;
+                    letter-spacing: 0;
                 }
             }
         }
@@ -1037,9 +1038,14 @@ header {
             font: 700 30px/42px Bahnschrift;
             letter-spacing: 1.95px;
             color: #FFFFFF;
-            margin-top: 200px;
             margin: 48px 139px 0 132px;
             text-transform: uppercase;
+
+            @media (max-width: @mobile-max) {
+                font: Bold 15px/21px Bahnschrift;
+                letter-spacing: 0.97px;
+                margin: 31px 0 0 81px;
+            }
         }
     }
 
@@ -1065,7 +1071,7 @@ header {
         @media (max-width: @mobile-max) {
             width: 351px;
             height: 685px;
-            top: 815px;
+            top: 825px;
             left: 25px;
         }
 
