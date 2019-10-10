@@ -326,22 +326,21 @@ header .toggle-button .inner .line.three.close {
   position: absolute;
   z-index: 1;
 }
-.mf-container .shape-video #yt_video_player {
-  width: 1600px;
-  height: 900px;
+.mf-container .shape-video video {
+  width: 100%;
+  height: 768px;
   position: absolute;
-  top: -60px;
 }
 @media (min-width: 1023px) and (max-width: 1520px) {
-  .mf-container .shape-video #yt_video_player {
-    width: 920px;
+  .mf-container .shape-video video {
     height: 630px;
+    margin-top: -60px;
   }
 }
 @media (max-width: 1022px) {
-  .mf-container .shape-video #yt_video_player {
-    width: 334px;
+  .mf-container .shape-video video {
     height: 238px;
+    margin-top: -30px;
   }
 }
 .mf-container .shape-wydarzenia {

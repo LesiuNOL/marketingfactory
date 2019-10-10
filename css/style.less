@@ -375,20 +375,22 @@ header {
             z-index: 1;            
         }
 
-        #yt_video_player {
-            width: 1600px;
-            height: 900px;
+        video {
+            width: 100%;
+            height: 768px;
             position: absolute;
-            top: -60px;
+            //top: -60px;
             
             @media (min-width: @tablet-min) and (max-width: @tablet-max) {
-                width: 920px;
+                //width: 920px;
                 height: 630px;
+                margin-top: -60px;
             }
             
             @media (max-width: @mobile-max) {
-                width: 334px;
+                //width: 334px;
                 height: 238px;
+                margin-top: -30px;
             }
         }
     }

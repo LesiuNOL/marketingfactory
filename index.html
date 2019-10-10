@@ -51,8 +51,12 @@
             </div>
             <div class="shape shape-video">
                 <h1>Imieniny<br />Piotrków<br />2019</h1>
-                <div id="yt_video_player"></div>
-                <div class="yt_cover"></div>
+                <!--<div id="yt_video_player"></div>
+                <div class="yt_cover"></div>-->
+                <video width="1600" height="900" id="video_player" autoplay muted loop>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <div class="shape shape-wydarzenia">
                 <h1>KONCERTY<br /> I WYDARZENIA</h1>
@@ -219,9 +223,6 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script defer src="js/bootstrap.min.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
-
-
     <script>
         function init() {
             var imgDefer = document.getElementsByTagName('img');
@@ -280,56 +281,25 @@
 
         $(document).on('scroll', MFleftOnScroll);
         $(document).on('resize', MFleftOnScroll);
-        // TEXT MF ON LEFT SITE - END
-
-        var p;
-        var player = {
-            playVideo: function(container, videoId) {
-                if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
-                    window.onYouTubeIframeAPIReady = function() {
-                        player.loadPlayer(container, videoId);
-                    };
-
-                    $.getScript('//www.youtube.com/iframe_api');
-                } else {
-                    player.loadPlayer(container, videoId);
-                }
-            },
-
-            loadPlayer: function(container, videoId) {
-                p = new YT.Player(container, {
-                    videoId: videoId,
-                    width: '1600',
-                    height: '900',
-                    playerVars: {
-                        autoplay: 1,
-                        controls: 1,
-                        disablekb: 1,
-                        hl: 'ru-ru',
-                        loop: 1,
-                        modestbranding: 1,
-                        showinfo: 0,
-                        autohide: 1,
-                        color: 'white',
-                        iv_load_policy: 3,
-                        theme: 'light',
-                        rel: 0
-                    },
-                    events: {
-                        'onReady': onPlayerReady
-                    }
-                });
-            }
-
-        };
-        player.playVideo('yt_video_player', 'O55s69YVXKU');
-
-        function onPlayerReady(event) {
-            p.mute();
-        }
-        // YOUTUBE PLAYER - END
+        // TEXT MF ON LEFT SITE - END   
 
     </script>
+    <!--<script src='https://vjs.zencdn.net/7.6.5/video.js'></script>-->
+    <script>
+        var vid;
+        $(document).ready(function() {
+            //vid = document.getElementById("video_player").play();
+            $('.shape-wydarzenia').on('click', function() {
+
+            });
+
+            setTimeout(function() {
+                //vid.play();
+            }, 2000);
+        })
+
+    </script>
+    <!--<script defer src="js/youtube_player.js"></script>-->
 </body>
 
 </html>
