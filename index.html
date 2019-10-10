@@ -58,6 +58,33 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
+
+            <!-- The Modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+
+
+                        <div class="modal-body">
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <!-- 16:9 aspect ratio -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video id="video_player_large">
+                                    <source src="videos/example.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <div class="shape shape-wydarzenia">
                 <h1>KONCERTY<br /> I WYDARZENIA</h1>
             </div>
@@ -284,22 +311,34 @@
         // TEXT MF ON LEFT SITE - END   
 
     </script>
-    <!--<script src='https://vjs.zencdn.net/7.6.5/video.js'></script>-->
     <script>
-        var vid;
         $(document).ready(function() {
-            //vid = document.getElementById("video_player").play();
-            $('.shape-wydarzenia').on('click', function() {
+            var vid = document.getElementById("video_player");
+            var vid2 = document.getElementById("video_player_large");
 
+            $('.shape-video').on('click', function() {
+                $('#myModal').modal('toggle');
+                if (vid.paused) {
+                    vid.play();
+                    vid2.pause();
+                } else {
+                    vid.pause();
+                    //vid2.volume = 1;
+                    vid2.play();
+                    alert(vid2.volume);
+                }
             });
 
-            setTimeout(function() {
-                //vid.play();
-            }, 2000);
+            $("#myModal").on("hidden.bs.modal", function() {
+                vid.play();
+            });
+            
+            vid2.addEventListener('ended', function() {
+               $('#myModal').modal('hide');    
+            }, false);
         })
 
     </script>
-    <!--<script defer src="js/youtube_player.js"></script>-->
 </body>
 
 </html>

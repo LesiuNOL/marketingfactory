@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 @font-face {
   font-family: 'Bahnschrift';
-  font-display: auto;
+  font-display: optional;
   src: url('../fonts/bahnschrift.ttf') format('truetype');
 }
 body {
@@ -1236,11 +1236,21 @@ header .toggle-button .inner .line.three.close {
     letter-spacing: 1.24px;
   }
 }
-.height-test {
+.modal-dialog {
+  max-width: 80%;
+  margin: 30px auto;
+}
+.modal-body {
+  position: relative;
+  padding: 0px;
+}
+.close {
   position: absolute;
-  width: 16px;
-  height: 378px;
-  background: transparent url('../images/mf_left.webp') 0% 0% no-repeat padding-box;
+  right: -30px;
   top: 0;
-  left: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
 }
