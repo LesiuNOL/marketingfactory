@@ -308,6 +308,8 @@ header .toggle-button .inner .line.three.close {
   color: #FFFFFF;
   margin: 253px 0 0 828px;
   text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
 }
 @media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .shape-video h1 {
@@ -316,6 +318,30 @@ header .toggle-button .inner .line.three.close {
     letter-spacing: 1.3px;
     bottom: 130px;
     right: 134px;
+  }
+}
+.mf-container .shape-video .yt_cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.mf-container .shape-video #yt_video_player {
+  width: 1600px;
+  height: 900px;
+  position: absolute;
+  top: -60px;
+}
+@media (min-width: 1023px) and (max-width: 1520px) {
+  .mf-container .shape-video #yt_video_player {
+    width: 920px;
+    height: 630px;
+  }
+}
+@media (max-width: 1022px) {
+  .mf-container .shape-video #yt_video_player {
+    width: 334px;
+    height: 238px;
   }
 }
 .mf-container .shape-wydarzenia {
