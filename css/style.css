@@ -135,6 +135,7 @@ header .toggle-button .inner .line.three.close {
   bottom: 0;
   left: 0;
   color: red;
+  z-index: 100;
 }
 @media (min-width: 1023px) and (max-width: 1520px) {
   .debug {
