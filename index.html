@@ -246,12 +246,13 @@
         var viewportWidth = $(window).width();
         var viewportHeight = $(window).height();
         $('.debug').html('W: ' + viewportWidth + 'px' + ' (' + (viewportWidth + 17) + 'px)<br/>' +
-                        'H: ' + viewportWidth + 'px' + ' (' + (viewportHeight) + 'px)<br/>');
+                        'H: ' + viewportHeight + 'px' + ' (' + (viewportHeight) + 'px)<br/>');
 
         $(window).resize(function() {
             viewportWidth = $(window).width();
             viewportHeight = $(window).height();
-            $('.debug').html(viewportWidth + 'px' + ' (' + (viewportWidth + 17) + 'px)');
+            $('.debug').html('W: ' + viewportWidth + 'px' + ' (' + (viewportWidth + 17) + 'px)<br/>' +
+                        'H: ' + viewportHeight + 'px' + ' (' + (viewportHeight) + 'px)<br/>');
         });
 
         function MFleftOnScroll() {
