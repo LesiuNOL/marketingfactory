@@ -35,6 +35,7 @@ header {
     background-size: 100%;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
     top: 0px;
     left: 0px;
     width: 100%;
@@ -42,8 +43,15 @@ header {
     max-width: 100%;
 
     @media (min-width: @tablet-min) and (max-width: @tablet-max) {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+        height: 293px;
+    }
+
+    @media (max-width: @mobile-max) {
+        height: 293px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
     }
 
     .logo {
@@ -52,6 +60,18 @@ header {
         position: absolute;
         top: 40px;
         left: 60px;
+
+        @media (min-width: @tablet-min) and (max-width: @tablet-max) {
+            max-width: 180px;
+            top: 0;
+            left: 0;
+        }
+
+        @media (max-width: @mobile-max) {
+            max-width: 180px;
+            top: 0;
+            left: 0;
+        }
     }
 
     ul.nav {
@@ -66,8 +86,19 @@ header {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 27%);
         transition: all 500ms ease;
 
+        @media (max-width: @mobile-max) {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+            padding: 50px 0 20px 0;
+        }
+
         &.hide {
             top: -150px;
+
+            @media (max-width: @mobile-max) {
+                top: -200px;
+            }
+
         }
 
         li.nav-item {
@@ -75,6 +106,13 @@ header {
 
             @media (min-width: @tablet-min) and (max-width: @tablet-max) {
                 margin: 0 28px;
+            }
+
+            @media (max-width: @mobile-max) {
+                margin: 5px 0px;
+                display: block;
+                width: 100%;
+                text-align: right;
             }
 
             a.nav-link {
@@ -106,6 +144,10 @@ header {
 
         &.hide {
             top: 129px;
+
+            @media (max-width: @mobile-max) {
+                top: 0px;
+            }
         }
 
         .inner {
@@ -137,6 +179,7 @@ header {
 
                     &.close {
                         top: 3px;
+                        left: 0;
                         transform: rotate(45deg);
                     }
                 }
@@ -193,6 +236,7 @@ header {
 
     @media (min-width: @tablet-min) and (max-width: @tablet-max) {
         width: 990px;
+        top: 23px;
     }
 
     @media (max-width: @mobile-max) {
@@ -205,6 +249,15 @@ header {
         height: 378px;
         background: transparent url('../images/mf_left.webp') 0% 0% no-repeat padding-box;
         z-index: 1;
+        left: -27px;
+
+        @media (min-width: @tablet-min) and (max-width: @tablet-max) {
+            left: 16px;
+        }
+
+        @media (max-width: @mobile-max) {
+            left: 4px;
+        }
     }
 
     /*.mf-rotate-text {
@@ -418,7 +471,10 @@ header {
         }
 
         @media (max-width: @mobile-max) {
-            display: none;
+            width: 302px;
+            height: 155px;
+            top: calc(1383px);
+            left: calc(40px);
         }
 
 
@@ -435,6 +491,11 @@ header {
             @media (min-width: @tablet-min) and (max-width: @tablet-max) {
                 font: Bold 25px/35px Bahnschrift;
                 letter-spacing: 1.63px;
+            }
+
+            @media (max-width: @mobile-max) {
+                font: Bold 19px/27px Bahnschrift;
+                letter-spacing: 1.24px;
             }
         }
     }
@@ -700,7 +761,8 @@ header {
             }
 
             @media (max-width: @mobile-max) {
-                display: none;
+                left: 40px;
+                display: block;
             }
 
 
@@ -710,6 +772,12 @@ header {
                 height: 122px;
                 vertical-align: top;
                 display: inline-block;
+
+                @media (max-width: @mobile-max) {
+                    width: 302px;
+                    height: 147px;
+                    max-width: 302px;
+                }
             }
 
             .content {
@@ -717,6 +785,11 @@ header {
                 width: 68%;
                 height: 122px;
                 position: relative;
+
+                @media (max-width: @mobile-max) {
+                    display: block;
+                    height: 87px;
+                }
 
                 h2 {
                     text-align: left;
@@ -727,6 +800,12 @@ header {
                     display: inline-block;
                     margin: 12px 0 0 17px;
                     width: 100%;
+
+                    @media (max-width: @mobile-max) {
+                        font: Bold 20px/28px Bahnschrift;
+                        letter-spacing: 1.3px;
+                    }
+
                 }
 
                 small {
@@ -738,6 +817,12 @@ header {
                     position: absolute;
                     bottom: 0;
                     margin: 0 0 12px 16px;
+
+                    @media (max-width: @mobile-max) {
+                        font: 300 14px/13px Bahnschrift;
+                        letter-spacing: 0;
+                        margin: 0 0 14px 16px;
+                    }
                 }
 
                 .triangle-1 {
@@ -749,6 +834,11 @@ header {
                     right: 36px;
                     -webkit-clip-path: polygon(28% 0, 100% 0, 0 100%);
                     clip-path: polygon(28% 0, 100% 0, 0 100%);
+
+                    @media (max-width: @mobile-max) {
+                        right: 5px;
+                        top: 8px;
+                    }
                 }
 
                 .triangle-2 {
@@ -761,6 +851,11 @@ header {
                     right: 0;
                     position: absolute;
                     display: flex;
+
+                    @media (max-width: @mobile-max) {
+                        right: -31px;
+                        top: 0;
+                    }
 
                     span {
                         text-align: right;
@@ -779,6 +874,10 @@ header {
                 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
                     top: calc(2085px - @top-minus + 72px + @tablet-top);
                 }
+
+                @media (max-width: @mobile-max) {
+                    top: 1550px;
+                }
             }
 
             &.event-2 {
@@ -786,6 +885,10 @@ header {
 
                 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
                     top: calc(2222px - @top-minus + 72px + @tablet-top);
+                }
+
+                @media (max-width: @mobile-max) {
+                    top: 1805px;
                 }
             }
 
@@ -795,6 +898,10 @@ header {
                 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
                     top: calc(2359px - @top-minus + 72px + @tablet-top);
                 }
+
+                @media (max-width: @mobile-max) {
+                    top: 2060px;
+                }
             }
 
             &.event-4 {
@@ -802,6 +909,10 @@ header {
 
                 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
                     top: calc(2496px - @top-minus + 72px + @tablet-top);
+                }
+
+                @media (max-width: @mobile-max) {
+                    top: 2315px;
                 }
             }
         }
@@ -822,7 +933,11 @@ header {
             }
 
             @media (max-width: @mobile-max) {
-                display: none;
+                top: calc(2571px);
+                left: calc(0px);
+                transform: scale(0.7);
+                clip-path: polygon(42% 100%, 100% 34%, 0 0);
+                -webkit-clip-path: polygon(42% 100%, 100% 34%, 0 0);
             }
         }
 
@@ -843,7 +958,10 @@ header {
             }
 
             @media (max-width: @mobile-max) {
-                display: none;
+                width: 302px;
+                height: 89px;
+                top: calc(2571px);
+                left: calc(40px);
             }
 
             span {
@@ -855,6 +973,12 @@ header {
                 align-self: self-end;
                 margin: 65px 19px;
                 text-transform: uppercase;
+
+                @media (max-width: @mobile-max) {
+                    font: Bold 14px/15px Bahnschrift;
+                    letter-spacing: 0.91px;
+                    margin: 48px 8px;
+                }
             }
         }
     }
@@ -1099,7 +1223,7 @@ header {
 
         @media (max-width: @mobile-max) {
             width: 351px;
-            height: 685px;
+            height: 550px;
             top: 825px;
             left: 25px;
         }
@@ -1143,6 +1267,7 @@ header {
 
                 @media (max-width: @mobile-max) {
                     height: 145px;
+                    width: 76%;
                 }
 
                 h2 {
@@ -1232,7 +1357,8 @@ header {
         }
 
         @media (max-width: @mobile-max) {
-            display: none;
+            height: 118px;
+            top: calc(2555px);
         }
 
         .logo {
@@ -1249,6 +1375,12 @@ header {
                 width: 179px;
                 height: 179px;
                 left: 30px;
+            }
+
+            @media (max-width: @mobile-max) {
+                width: 118px;
+                height: 118px;
+                left: 40px;
             }
         }
 
@@ -1270,6 +1402,17 @@ header {
                 clip-path: polygon(0 0, 3% 100%, 63% 100%);
                 z-index: 0;
             }
+
+            @media (max-width: @mobile-max) {
+                width: 200px;
+                height: 114px;
+                left: unset;
+                right: -53px;
+                //-webkit-clip-path: polygon(0 0, 100% 73%, 100% 100%, 10% 100%);
+                //clip-path: polygon(0 0, 100% 73%, 100% 100%, 10% 100%);
+                -webkit-clip-path: polygon(0 0, 10% 100%, 100% 100%);
+                clip-path: polygon(0 0, 10% 100%, 100% 100%);
+            }
         }
 
         .contact {
@@ -1288,6 +1431,13 @@ header {
                 left: 191px;
             }
 
+            @media (max-width: @mobile-max) {
+                height: auto;
+                width: auto;
+                left: 193px;
+                top: calc(50% + 15px);
+            }
+
             h1 {
                 text-align: left;
                 font: 600 24px/41px Bahnschrift;
@@ -1297,6 +1447,11 @@ header {
                 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
                     font: 600 18px/8px Bahnschrift;
                     letter-spacing: 1.24px;
+                }
+
+                @media (max-width: @mobile-max) {
+                    font: 700 12px/16px Bahnschrift;
+                    letter-spacing: 0.78px;
                 }
             }
 
@@ -1310,6 +1465,11 @@ header {
                 @media (min-width: @tablet-min) and (max-width: @tablet-max) {
                     font: 500 19px/27px Bahnschrift;
                     letter-spacing: 1.24px;
+                }
+
+                @media (max-width: @mobile-max) {
+                    font: 300 12px/16px Bahnschrift;
+                    letter-spacing: 0.78px;
                 }
             }
         }

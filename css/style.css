@@ -15,6 +15,7 @@ header {
   background-size: 100%;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
   top: 0px;
   left: 0px;
   width: 100%;
@@ -23,8 +24,16 @@ header {
 }
 @media (min-width: 1023px) and (max-width: 1520px) {
   header {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+    height: 293px;
+  }
+}
+@media (max-width: 1022px) {
+  header {
+    height: 293px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
   }
 }
 header .logo {
@@ -33,6 +42,20 @@ header .logo {
   position: absolute;
   top: 40px;
   left: 60px;
+}
+@media (min-width: 1023px) and (max-width: 1520px) {
+  header .logo {
+    max-width: 180px;
+    top: 0;
+    left: 0;
+  }
+}
+@media (max-width: 1022px) {
+  header .logo {
+    max-width: 180px;
+    top: 0;
+    left: 0;
+  }
 }
 header ul.nav {
   top: 0;
@@ -45,8 +68,20 @@ header ul.nav {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 27%);
   transition: all 500ms ease;
 }
+@media (max-width: 1022px) {
+  header ul.nav {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    padding: 50px 0 20px 0;
+  }
+}
 header ul.nav.hide {
   top: -150px;
+}
+@media (max-width: 1022px) {
+  header ul.nav.hide {
+    top: -200px;
+  }
 }
 header ul.nav li.nav-item {
   margin: 0 35px;
@@ -54,6 +89,14 @@ header ul.nav li.nav-item {
 @media (min-width: 1023px) and (max-width: 1520px) {
   header ul.nav li.nav-item {
     margin: 0 28px;
+  }
+}
+@media (max-width: 1022px) {
+  header ul.nav li.nav-item {
+    margin: 5px 0px;
+    display: block;
+    width: 100%;
+    text-align: right;
   }
 }
 header ul.nav li.nav-item a.nav-link {
@@ -83,6 +126,11 @@ header .toggle-button {
 header .toggle-button.hide {
   top: 129px;
 }
+@media (max-width: 1022px) {
+  header .toggle-button.hide {
+    top: 0px;
+  }
+}
 header .toggle-button .inner {
   position: relative;
   width: 23px;
@@ -111,6 +159,7 @@ header .toggle-button .inner .line.one {
 }
 header .toggle-button .inner .line.one.close {
   top: 3px;
+  left: 0;
   transform: rotate(45deg);
 }
 header .toggle-button .inner .line.two {
@@ -195,6 +244,7 @@ header .toggle-button .inner .line.three.close {
 @media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container {
     width: 990px;
+    top: 23px;
   }
 }
 @media (max-width: 1022px) {
@@ -208,6 +258,17 @@ header .toggle-button .inner .line.three.close {
   height: 378px;
   background: transparent url('../images/mf_left.webp') 0% 0% no-repeat padding-box;
   z-index: 1;
+  left: -27px;
+}
+@media (min-width: 1023px) and (max-width: 1520px) {
+  .mf-container .mf-rotate-text {
+    left: 16px;
+  }
+}
+@media (max-width: 1022px) {
+  .mf-container .mf-rotate-text {
+    left: 4px;
+  }
 }
 .mf-container img {
   width: 100%;
@@ -366,7 +427,10 @@ header .toggle-button .inner .line.three.close {
 }
 @media (max-width: 1022px) {
   .mf-container .shape-wydarzenia {
-    display: none;
+    width: 302px;
+    height: 155px;
+    top: calc(1383px);
+    left: calc(40px);
   }
 }
 .mf-container .shape-wydarzenia h1 {
@@ -383,6 +447,12 @@ header .toggle-button .inner .line.three.close {
   .mf-container .shape-wydarzenia h1 {
     font: Bold 25px/35px Bahnschrift;
     letter-spacing: 1.63px;
+  }
+}
+@media (max-width: 1022px) {
+  .mf-container .shape-wydarzenia h1 {
+    font: Bold 19px/27px Bahnschrift;
+    letter-spacing: 1.24px;
   }
 }
 .mf-container .shape-transport {
@@ -641,7 +711,8 @@ header .toggle-button .inner .line.three.close {
 }
 @media (max-width: 1022px) {
   .mf-container .events .event {
-    display: none;
+    left: 40px;
+    display: block;
   }
 }
 .mf-container .events .event img {
@@ -651,11 +722,24 @@ header .toggle-button .inner .line.three.close {
   vertical-align: top;
   display: inline-block;
 }
+@media (max-width: 1022px) {
+  .mf-container .events .event img {
+    width: 302px;
+    height: 147px;
+    max-width: 302px;
+  }
+}
 .mf-container .events .event .content {
   display: inline-block;
   width: 68%;
   height: 122px;
   position: relative;
+}
+@media (max-width: 1022px) {
+  .mf-container .events .event .content {
+    display: block;
+    height: 87px;
+  }
 }
 .mf-container .events .event .content h2 {
   text-align: left;
@@ -667,6 +751,12 @@ header .toggle-button .inner .line.three.close {
   margin: 12px 0 0 17px;
   width: 100%;
 }
+@media (max-width: 1022px) {
+  .mf-container .events .event .content h2 {
+    font: Bold 20px/28px Bahnschrift;
+    letter-spacing: 1.3px;
+  }
+}
 .mf-container .events .event .content small {
   text-align: left;
   font: 300 20px/13px Bahnschrift;
@@ -676,6 +766,13 @@ header .toggle-button .inner .line.three.close {
   position: absolute;
   bottom: 0;
   margin: 0 0 12px 16px;
+}
+@media (max-width: 1022px) {
+  .mf-container .events .event .content small {
+    font: 300 14px/13px Bahnschrift;
+    letter-spacing: 0;
+    margin: 0 0 14px 16px;
+  }
 }
 .mf-container .events .event .content .triangle-1 {
   width: 78px;
@@ -687,6 +784,12 @@ header .toggle-button .inner .line.three.close {
   -webkit-clip-path: polygon(28% 0, 100% 0, 0 100%);
   clip-path: polygon(28% 0, 100% 0, 0 100%);
 }
+@media (max-width: 1022px) {
+  .mf-container .events .event .content .triangle-1 {
+    right: 5px;
+    top: 8px;
+  }
+}
 .mf-container .events .event .content .triangle-2 {
   width: 132px;
   height: 87px;
@@ -697,6 +800,12 @@ header .toggle-button .inner .line.three.close {
   right: 0;
   position: absolute;
   display: flex;
+}
+@media (max-width: 1022px) {
+  .mf-container .events .event .content .triangle-2 {
+    right: -31px;
+    top: 0;
+  }
 }
 .mf-container .events .event .content .triangle-2 span {
   text-align: right;
@@ -714,12 +823,22 @@ header .toggle-button .inner .line.three.close {
     top: calc(1855px);
   }
 }
+@media (max-width: 1022px) {
+  .mf-container .events .event.event-1 {
+    top: 1550px;
+  }
+}
 .mf-container .events .event.event-2 {
   top: calc(648px);
 }
 @media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .events .event.event-2 {
     top: calc(1992px);
+  }
+}
+@media (max-width: 1022px) {
+  .mf-container .events .event.event-2 {
+    top: 1805px;
   }
 }
 .mf-container .events .event.event-3 {
@@ -730,12 +849,22 @@ header .toggle-button .inner .line.three.close {
     top: calc(2129px);
   }
 }
+@media (max-width: 1022px) {
+  .mf-container .events .event.event-3 {
+    top: 2060px;
+  }
+}
 .mf-container .events .event.event-4 {
   top: calc(922px);
 }
 @media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container .events .event.event-4 {
     top: calc(2266px);
+  }
+}
+@media (max-width: 1022px) {
+  .mf-container .events .event.event-4 {
+    top: 2315px;
   }
 }
 .mf-container .events .more-1 {
@@ -756,7 +885,11 @@ header .toggle-button .inner .line.three.close {
 }
 @media (max-width: 1022px) {
   .mf-container .events .more-1 {
-    display: none;
+    top: calc(2571px);
+    left: calc(0px);
+    transform: scale(0.7);
+    clip-path: polygon(42% 100%, 100% 34%, 0 0);
+    -webkit-clip-path: polygon(42% 100%, 100% 34%, 0 0);
   }
 }
 .mf-container .events .more-2 {
@@ -778,7 +911,10 @@ header .toggle-button .inner .line.three.close {
 }
 @media (max-width: 1022px) {
   .mf-container .events .more-2 {
-    display: none;
+    width: 302px;
+    height: 89px;
+    top: calc(2571px);
+    left: calc(40px);
   }
 }
 .mf-container .events .more-2 span {
@@ -790,6 +926,13 @@ header .toggle-button .inner .line.three.close {
   align-self: self-end;
   margin: 65px 19px;
   text-transform: uppercase;
+}
+@media (max-width: 1022px) {
+  .mf-container .events .more-2 span {
+    font: Bold 14px/15px Bahnschrift;
+    letter-spacing: 0.91px;
+    margin: 48px 8px;
+  }
 }
 .mf-container .newest-post img.newest-photo {
   transition: all 0.5s linear;
@@ -1026,7 +1169,7 @@ header .toggle-button .inner .line.three.close {
 @media (max-width: 1022px) {
   .mf-container .shape-latests-post-bg {
     width: 351px;
-    height: 685px;
+    height: 550px;
     top: 825px;
     left: 25px;
   }
@@ -1070,6 +1213,7 @@ header .toggle-button .inner .line.three.close {
 @media (max-width: 1022px) {
   .mf-container .shape-latests-post-bg .post .content {
     height: 145px;
+    width: 76%;
   }
 }
 .mf-container .shape-latests-post-bg .post .content h2 {
@@ -1154,7 +1298,8 @@ header .toggle-button .inner .line.three.close {
 }
 @media (max-width: 1022px) {
   .mf-container footer {
-    display: none;
+    height: 118px;
+    top: calc(2555px);
   }
 }
 .mf-container footer .logo {
@@ -1172,6 +1317,13 @@ header .toggle-button .inner .line.three.close {
     width: 179px;
     height: 179px;
     left: 30px;
+  }
+}
+@media (max-width: 1022px) {
+  .mf-container footer .logo {
+    width: 118px;
+    height: 118px;
+    left: 40px;
   }
 }
 .mf-container footer .triangle {
@@ -1194,6 +1346,16 @@ header .toggle-button .inner .line.three.close {
     z-index: 0;
   }
 }
+@media (max-width: 1022px) {
+  .mf-container footer .triangle {
+    width: 200px;
+    height: 114px;
+    left: unset;
+    right: -53px;
+    -webkit-clip-path: polygon(0 0, 10% 100%, 100% 100%);
+    clip-path: polygon(0 0, 10% 100%, 100% 100%);
+  }
+}
 .mf-container footer .contact {
   width: 354px;
   height: 152px;
@@ -1211,6 +1373,14 @@ header .toggle-button .inner .line.three.close {
     left: 191px;
   }
 }
+@media (max-width: 1022px) {
+  .mf-container footer .contact {
+    height: auto;
+    width: auto;
+    left: 193px;
+    top: calc(65%);
+  }
+}
 .mf-container footer .contact h1 {
   text-align: left;
   font: 600 24px/41px Bahnschrift;
@@ -1221,6 +1391,12 @@ header .toggle-button .inner .line.three.close {
   .mf-container footer .contact h1 {
     font: 600 18px/8px Bahnschrift;
     letter-spacing: 1.24px;
+  }
+}
+@media (max-width: 1022px) {
+  .mf-container footer .contact h1 {
+    font: 700 12px/16px Bahnschrift;
+    letter-spacing: 0.78px;
   }
 }
 .mf-container footer .contact p {
@@ -1234,6 +1410,12 @@ header .toggle-button .inner .line.three.close {
   .mf-container footer .contact p {
     font: 500 19px/27px Bahnschrift;
     letter-spacing: 1.24px;
+  }
+}
+@media (max-width: 1022px) {
+  .mf-container footer .contact p {
+    font: 300 12px/16px Bahnschrift;
+    letter-spacing: 0.78px;
   }
 }
 .modal-dialog {

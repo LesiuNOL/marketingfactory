@@ -265,10 +265,26 @@
     </script>
 
     <script>
+        var menuStatus = false;
         $('header > .toggle-button').on('click', function() {
-            $('ul.nav').toggleClass('hide');
-            $(this).toggleClass('hide');
-            $(this).find('.line').toggleClass('close');
+            if (menuStatus == false) {
+                $('ul.nav').toggleClass('hide');
+                $(this).toggleClass('hide');
+                $(this).find('.line').toggleClass('close');
+                menuStatus = true;
+            } else {
+                $('ul.nav').toggleClass('hide');
+                $(this).toggleClass('hide');
+                $(this).find('.line').toggleClass('close');
+                menuStatus = false;
+            }
+        });
+        
+        $('.nav-link').on('mouseover', function() {
+            $('.nav-link').css('margin-right', '45px'); 
+            $(this).css('margin-right', '0px'); 
+        }).on('mouseout', function() {
+            $('.nav-link').css('margin-right', '0px'); 
         });
 
     </script>
@@ -334,7 +350,7 @@
             });
 
             vid2.addEventListener('ended', function() {
-                $('#myModal').modal('hide');                
+                $('#myModal').modal('hide');
             }, false);
         })
 
