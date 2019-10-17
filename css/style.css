@@ -1287,19 +1287,19 @@ header .toggle-button .inner .line.three.close {
 }
 .mf-container footer {
   position: relative;
-  top: calc(1664px);
+  top: calc(2050px);
   height: 352px;
 }
 @media (min-width: 1023px) and (max-width: 1520px) {
   .mf-container footer {
-    top: calc(2090px);
+    top: calc(2460px);
     height: 368px;
   }
 }
 @media (max-width: 1022px) {
   .mf-container footer {
     height: 118px;
-    top: calc(2555px);
+    top: calc(2680px);
   }
 }
 .mf-container footer .logo {
