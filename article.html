@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Marketing Factory</title>
+
+</head>
+
+<body>
+    <div class="debug"></div>
+    <header>
+        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/logo_mf_white.webp" alt="logo" class="logo" />
+
+        <ul class="nav justify-content-end hide">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">eventy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">marketing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">transport</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">kontakt</a>
+            </li>
+        </ul>
+        <div class="toggle-button">
+            <div class="inner">
+                <div class="line one"></div>
+                <div class="line two"></div>
+                <div class="line three"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="mf-rotate-text"></div>
+
+    <div class="article-single">
+        <div class="container">
+            <div class="row">
+                <div class="article-header">
+                    <h1>Koncert<br />Agnieszki Chylińskiej</h1>
+                    <small>14 września 2018</small>
+                </div>
+
+                <div class="article-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum nunc aliquet bibendum enim facilisis. Tempor orci eu lobortis elementum nibh tellus molestie nunc. Risus feugiat in ante metus. Dolor sed viverra ipsum nunc aliquet bibendum. Eget aliquet nibh praesent tristique magna sit amet. Blandit aliquam etiam erat velit. Imperdiet sed euismod nisi porta lorem mollis aliquam. In nisl nisi scelerisque eu ultrices. Ante metus dictum at tempor commodo ullamcorper a. Quisque non tellus orci ac auctor augue mauris. Praesent tristique magna sit amet purus gravida quis. Senectus et netus et malesuada. Nisi porta lorem mollis aliquam. Lorem ipsum dolor sit amet consectetur. A iaculis at erat pellentesque adipiscing commodo. Malesuada fames ac turpis egestas integer.</p>
+
+                    <h2>Aliquam ut porttitor leo a diam sollicitudin. Convallis a cras semper auctor. Laoreet id donec ultrices tincidunt arcu non sodales. Gravida neque</h2>
+
+                    <p>Eros in cursus turpis massa tincidunt dui ut. Massa tincidunt dui ut ornare. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Dolor sit amet consectetur adipiscing elit pellentesque. Et egestas quis ipsum suspendisse ultrices. Fames ac turpis egestas sed tempus urna et. Tristique sollicitudin nibh sit amet commodo nulla. Leo vel orci porta non. Donec massa sapien faucibus et</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="video-content">
+                <div class="container">
+                    <div class="content-container">
+                        <h1>VIDEO</h1>
+                        <div class="video-player"></div>
+                        <div class="video-info"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="mf-container">
+            <footer class="static">
+
+                <div class="logo"></div>
+                <div class="triangle"></div>
+                <div class="contact">
+                    <h1>MARKETING FACTORY</h1>
+                    <p>ul. Kopernika 64A<br />
+                        90-553 Łódź<br />
+                        Telefon: +48 784 864 808</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script defer src="js/bootstrap.min.js"></script>
+    <script>
+        function init() {
+            var imgDefer = document.getElementsByTagName('img');
+            for (var i = 0; i < imgDefer.length; i++) {
+                if (imgDefer[i].getAttribute('data-src')) {
+                    imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+                }
+            }
+        }
+
+        window.onload = init;
+
+    </script>
+
+    <script>
+        var menuStatus = false;
+        $('header > .toggle-button').on('click', function() {
+            if (menuStatus == false) {
+                $('ul.nav').toggleClass('hide');
+                $(this).toggleClass('hide');
+                $(this).find('.line').toggleClass('close');
+                menuStatus = true;
+            } else {
+                $('ul.nav').toggleClass('hide');
+                $(this).toggleClass('hide');
+                $(this).find('.line').toggleClass('close');
+                menuStatus = false;
+            }
+        });
+
+        $('.nav-link').on('mouseover', function() {
+            $('.nav-link').css('margin-right', '45px');
+            $(this).css('margin-right', '0px');
+        }).on('mouseout', function() {
+            $('.nav-link').css('margin-right', '0px');
+        });
+
+    </script>
+
+    <script>
+        // DEBUG WIDTH & HEIGHT - START
+        var viewportWidth = $(window).width();
+        var viewportHeight = $(window).height();
+        $('.debug').html('W: ' + viewportWidth + 'px' + ' (' + (viewportWidth + 17) + 'px)<br/>' +
+            'H: ' + viewportHeight + 'px' + ' (' + (viewportHeight) + 'px)<br/>');
+
+        $(window).resize(function() {
+            viewportWidth = $(window).width();
+            viewportHeight = $(window).height();
+            $('.debug').html('W: ' + viewportWidth + 'px' + ' (' + (viewportWidth + 17) + 'px)<br/>' +
+                'H: ' + viewportHeight + 'px' + ' (' + (viewportHeight) + 'px)<br/>');
+        });
+        // DEBUG WIDTH & HEIGHT - END
+
+        // TEXT MF ON LEFT SITE - START
+        function MFleftOnScroll() {
+            var scroll = $(window).scrollTop();
+            var heightDocument = $(document).height();
+            var heightWindow = $(window).height();
+            //console.log(scroll);
+            if (scroll < (heightDocument)) {
+                //$('.mf-rotate-text').css('top', scroll - (heightWindow / 2) + (350 / 2) +'px');
+                $('.mf-rotate-text').css('top', scroll - 530 + 'px');
+                if (scroll < 460 || heightWindow < 450) {
+                    $('.mf-rotate-text').hide();
+                } else {
+                    $('.mf-rotate-text').show();
+                }
+            }
+        }
+        MFleftOnScroll();
+
+        $(document).on('scroll', MFleftOnScroll);
+        $(document).on('resize', MFleftOnScroll);
+        // TEXT MF ON LEFT SITE - END   
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            var vid = document.getElementById("video_player");
+            var vid2 = document.getElementById("video_player_large");
+
+            $('.shape-video').on('click', function() {
+                $('#myModal').modal('toggle');
+                if (vid.paused) {
+                    vid.play();
+                    vid2.pause();
+                } else {
+                    vid.pause();
+                    //vid2.volume = 1;
+                    vid2.play();
+                }
+            });
+
+            $("#myModal").on("hidden.bs.modal", function() {
+                vid.play();
+                vid2.pause();
+            });
+
+            vid2.addEventListener('ended', function() {
+                $('#myModal').modal('hide');
+            }, false);
+        })
+
+    </script>
+</body>
+
+</html>
